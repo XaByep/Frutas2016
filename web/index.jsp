@@ -1,46 +1,46 @@
 <%--
   Created by IntelliJ IDEA.
-  User: JAVI
+  User: Juangra
   Date: 14/10/2016
   Time: 11:52
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="../estilos/login.css">
+  <head>
+    <meta charset="UTF-8">
     <title>Frutas Harnina</title>
-</head>
-<body>
+    <link rel="stylesheet" href="../css/login.css">
+  </head>
 
-<% if (session.getAttribute("idSesion") == null) {
-    session.setAttribute("idSesion", session.getId());
-   }else if(session.getAttribute("idSesion")==session.getId()){
-    System.out.println("Todo va bien");
-   }
-%>
+  <body>
+    <% if (session.getAttribute("idSesion") == null){
+      session.setAttribute("idSesion", session.getId());
+    }
+      if (session.getAttribute("idSesion") == session.getId()){
+        System.out.println("Todo va bien");
+        //System.out.println(session.getAttribute("idSesion"));
+      }
+    %>
 
-<body>
-
-<div class="container">
-    <section id="content">
+    <div class="container">
+      <section id="content">
         <form action="">
-            <h1>Iniciar Sesión</h1>
-            <div>
-                <input type="text" placeholder="Usuario" required="" id="username" />
-            </div>
-            <div>
-                <input type="password" placeholder="Contraseña" required="" id="password" />
-            </div>
-            <div>
-                <input type="submit" value="Iniciar Sesión" />
-                <a href="../almacen/registrar.jsp">Registrar</a>
-            </div>
+          <h1>Iniciar Sesión</h1>
+          <div>
+            <input type="text" placeholder="Usuario" required="" id="username" />
+          </div>
+          <div>
+            <input type="password" placeholder="Contraseña" required="" id="password" />
+          </div>
+          <div>
+            <input type="submit" value="Iniciar Sesión" />
+            <a href="almacen/registrar.jsp">Registrar</a>
+          </div>
         </form><!-- form -->
-    </section><!-- content -->
-</div>
+      </section><!-- content -->
+    </div>
 
-</body>
+  </body>
+
 </html>
