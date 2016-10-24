@@ -1,0 +1,1565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - frutas2016@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="frutas2016">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="ciclo2016(2)"/>
+    <schema id="3" name="cr_debug"/>
+    <schema id="4" name="information_schema"/>
+    <schema id="5" name="libreria"/>
+    <schema id="6" name="mysql"/>
+    <schema id="7" name="performance_schema"/>
+    <schema id="8" name="sys"/>
+    <table id="9" parent="1" name="almacen"/>
+    <table id="10" parent="1" name="almacen_albaran_cabecera"/>
+    <table id="11" parent="1" name="almacen_albaran_detalle"/>
+    <table id="12" parent="1" name="almacen_factura_cabecera"/>
+    <table id="13" parent="1" name="almacen_factura_detalle"/>
+    <table id="14" parent="1" name="area_distribucion"/>
+    <table id="15" parent="1" name="codigopostal"/>
+    <table id="16" parent="1" name="comunidadautonoma"/>
+    <table id="17" parent="1" name="distribucion"/>
+    <table id="18" parent="1" name="email"/>
+    <table id="19" parent="1" name="empresa"/>
+    <table id="20" parent="1" name="fruta"/>
+    <table id="21" parent="1" name="medida"/>
+    <table id="22" parent="1" name="municipio"/>
+    <table id="23" parent="1" name="plural"/>
+    <table id="24" parent="1" name="provincia"/>
+    <table id="25" parent="1" name="tienda"/>
+    <table id="26" parent="1" name="tienda_pedido_cabezera"/>
+    <table id="27" parent="1" name="tienda_pedido_detalle"/>
+    <table id="28" parent="1" name="variedad"/>
+    <table id="29" parent="1" name="venta"/>
+    <routine id="30" parent="1" name="actillaCursos">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="31" parent="1" name="añadirFruta">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="32" parent="1" name="buscarPalabrasEnFrase">
+      <routine-kind>FUNCTION</routine-kind>
+    </routine>
+    <routine id="33" parent="1" name="capital">
+      <comment>Con la sentencia SET asignamos un valor a la variable</comment>
+      <routine-kind>FUNCTION</routine-kind>
+    </routine>
+    <routine id="34" parent="1" name="colaCine2">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="35" parent="1" name="colaCine3">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="36" parent="1" name="colorGestion">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="37" parent="1" name="colorGestionExamen">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="38" parent="1" name="colorGestionExamenDos">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="39" parent="1" name="color_CRUD">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="40" parent="1" name="comprobarNombre">
+      <routine-kind>FUNCTION</routine-kind>
+    </routine>
+    <routine id="41" parent="1" name="comprobarNombreLuciano">
+      <routine-kind>FUNCTION</routine-kind>
+    </routine>
+    <routine id="42" parent="1" name="condicional">
+      <routine-kind>FUNCTION</routine-kind>
+    </routine>
+    <routine id="43" parent="1" name="contarPalabrasREPEAT1">
+      <routine-kind>FUNCTION</routine-kind>
+    </routine>
+    <routine id="44" parent="1" name="contarPalabrasREPEAT2">
+      <routine-kind>FUNCTION</routine-kind>
+    </routine>
+    <routine id="45" parent="1" name="contarVocalesSeparadas">
+      <routine-kind>FUNCTION</routine-kind>
+    </routine>
+    <routine id="46" parent="1" name="creaTabla">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="47" parent="1" name="cuentaNumeroDNI">
+      <routine-kind>FUNCTION</routine-kind>
+    </routine>
+    <routine id="48" parent="1" name="cuentaVocales">
+      <routine-kind>FUNCTION</routine-kind>
+    </routine>
+    <routine id="49" parent="1" name="diaSemana">
+      <routine-kind>FUNCTION</routine-kind>
+    </routine>
+    <routine id="50" parent="1" name="diasLectivos">
+      <routine-kind>FUNCTION</routine-kind>
+    </routine>
+    <routine id="51" parent="1" name="diviResta">
+      <routine-kind>FUNCTION</routine-kind>
+    </routine>
+    <routine id="52" parent="1" name="ejemploLOOP">
+      <comment>label1 hace referencia a la etiqueta(nombre) del bucle.</comment>
+      <routine-kind>FUNCTION</routine-kind>
+    </routine>
+    <routine id="53" parent="1" name="evaluacion">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="54" parent="1" name="fruta2_Cola">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="55" parent="1" name="generarCalificaciones">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="56" parent="1" name="insertarAlumnosActilla">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="57" parent="1" name="inversaCadena">
+      <routine-kind>FUNCTION</routine-kind>
+    </routine>
+    <routine id="58" parent="1" name="leerMesCURSOR">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="59" parent="1" name="llamada_a_pila_fruta3_get">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="60" parent="1" name="llamada_a_pila_fruta3_push">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="61" parent="1" name="multisuma">
+      <routine-kind>FUNCTION</routine-kind>
+    </routine>
+    <routine id="62" parent="1" name="obtenerNotas">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="63" parent="1" name="palabaraInvresaINSERT">
+      <routine-kind>FUNCTION</routine-kind>
+    </routine>
+    <routine id="64" parent="1" name="palabraInversaWHILE">
+      <routine-kind>FUNCTION</routine-kind>
+    </routine>
+    <routine id="65" parent="1" name="palabraMayor">
+      <routine-kind>FUNCTION</routine-kind>
+    </routine>
+    <routine id="66" parent="1" name="palabraMayorExamen">
+      <routine-kind>FUNCTION</routine-kind>
+    </routine>
+    <routine id="67" parent="1" name="parOimpar">
+      <routine-kind>FUNCTION</routine-kind>
+    </routine>
+    <routine id="68" parent="1" name="PGenerarFactura">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="69" parent="1" name="pila_fruta3_get">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="70" parent="1" name="pila_fruta3_push">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="71" parent="1" name="pila_fruta3_search">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="72" parent="1" name="pila_fruta4_search">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="73" parent="1" name="ponerCapitalCiudades">
+      <routine-kind>FUNCTION</routine-kind>
+    </routine>
+    <routine id="74" parent="1" name="ponerEnSingular">
+      <routine-kind>FUNCTION</routine-kind>
+    </routine>
+    <routine id="75" parent="1" name="PPrimerCursorExamen">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="76" parent="1" name="primera">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="77" parent="1" name="PSegundoCursorEXAMEN">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="78" parent="1" name="quitarEspacios">
+      <routine-kind>FUNCTION</routine-kind>
+    </routine>
+    <routine id="79" parent="1" name="saludo">
+      <routine-kind>FUNCTION</routine-kind>
+    </routine>
+    <routine id="80" parent="1" name="separarDias">
+      <routine-kind>FUNCTION</routine-kind>
+    </routine>
+    <routine id="81" parent="1" name="separarDiasAnglosajon">
+      <routine-kind>FUNCTION</routine-kind>
+    </routine>
+    <routine id="82" parent="1" name="singular">
+      <routine-kind>FUNCTION</routine-kind>
+    </routine>
+    <routine id="83" parent="1" name="soloLetras">
+      <routine-kind>FUNCTION</routine-kind>
+    </routine>
+    <routine id="84" parent="1" name="transaccion">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="85" parent="1" name="verCodigoProvincia">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <column id="86" parent="9" name="CodigoAlmacen">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="87" parent="9" name="CIFAlmacen">
+      <mandatory>1</mandatory>
+      <data-type>varchar(9)|0</data-type>
+    </column>
+    <column id="88" parent="9" name="NombreAlmacen">
+      <mandatory>1</mandatory>
+      <data-type>varchar(25)|0</data-type>
+    </column>
+    <column id="89" parent="9" name="DireccionAlmacen">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="90" parent="9" name="FijoAlmacen">
+      <data-type>varchar(12)|0</data-type>
+    </column>
+    <column id="91" parent="9" name="CodigoPostal">
+      <data-type>varchar(5)|0</data-type>
+    </column>
+    <column id="92" parent="9" name="usuarioAlmacen">
+      <mandatory>1</mandatory>
+      <data-type>varchar(15)|0</data-type>
+    </column>
+    <column id="93" parent="9" name="passwordAlmacen">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <index id="94" parent="9" name="CIFAlmacen">
+      <columns>CIFAlmacen</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="95" parent="9" name="CodigoPostal">
+      <columns>CodigoPostal</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="96" parent="9" name="usuario">
+      <columns>usuarioAlmacen</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="97" parent="9" name="PRIMARY">
+      <columns>CodigoAlmacen</columns>
+      <primary>1</primary>
+    </key>
+    <key id="98" parent="9" name="CIFAlmacen">
+      <columns>CIFAlmacen</columns>
+      <underlying-index>CIFAlmacen</underlying-index>
+    </key>
+    <key id="99" parent="9" name="usuario">
+      <columns>usuarioAlmacen</columns>
+      <underlying-index>usuario</underlying-index>
+    </key>
+    <foreign-key id="100" parent="9" name="almacen_ibfk_1">
+      <columns>CodigoPostal</columns>
+      <ref-key>frutas2016.codigopostal(CodigoPostal)</ref-key>
+      <cascade-update-rule>set_null</cascade-update-rule>
+      <cascade-delete-rule>set_null</cascade-delete-rule>
+    </foreign-key>
+    <column id="101" parent="10" name="CodigoAlbaran">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="102" parent="10" name="CodigoAlmacen">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="103" parent="10" name="CodigoTienda">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="104" parent="10" name="FechaAlbaran">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="105" parent="10" name="AlbaranFirmado">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="106" parent="10" name="FacturaGenerada">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <index id="107" parent="10" name="CodigoAlmacen">
+      <columns>CodigoAlmacen</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="108" parent="10" name="FK_almacen_albaran_cabecera_tienda">
+      <columns>CodigoTienda</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="109" parent="10" name="PRIMARY">
+      <columns>CodigoAlbaran</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="110" parent="10" name="FK_almacen_albaran_cabecera_almacen">
+      <columns>CodigoAlmacen</columns>
+      <ref-key>~.almacen.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="111" parent="10" name="FK_almacen_albaran_cabecera_tienda">
+      <columns>CodigoTienda</columns>
+      <ref-key>~.tienda.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="112" parent="11" name="CodigoAlbaran">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="113" parent="11" name="CodigoVariedad">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="114" parent="11" name="CodigoMedida">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="115" parent="11" name="CantidadServida">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <index id="116" parent="11" name="FK_almacen_albaran_detalle_medida">
+      <columns>CodigoMedida</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="117" parent="11" name="FK_almacen_albaran_detalle_variedad">
+      <columns>CodigoVariedad</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="118" parent="11" name="PRIMARY">
+      <columns>CodigoAlbaran
+CodigoVariedad
+CodigoMedida</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="119" parent="11" name="FK_almacen_albaran_detalle_almacen_albaran_cabecera">
+      <columns>CodigoAlbaran</columns>
+      <ref-key>~.almacen_albaran_cabecera.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="120" parent="11" name="FK_almacen_albaran_detalle_variedad">
+      <columns>CodigoVariedad</columns>
+      <ref-key>~.variedad.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="121" parent="11" name="FK_almacen_albaran_detalle_medida">
+      <columns>CodigoMedida</columns>
+      <ref-key>~.medida.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="122" parent="12" name="CodigoFactura">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="123" parent="12" name="NombreAlmacen">
+      <mandatory>1</mandatory>
+      <data-type>varchar(25)|0</data-type>
+    </column>
+    <column id="124" parent="12" name="CIFAlmacen">
+      <mandatory>1</mandatory>
+      <data-type>varchar(9)|0</data-type>
+    </column>
+    <column id="125" parent="12" name="DireccionAlmacen">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="126" parent="12" name="CodigoPostal">
+      <mandatory>1</mandatory>
+      <data-type>varchar(5)|0</data-type>
+    </column>
+    <column id="127" parent="12" name="NombreMunicipio">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="128" parent="12" name="NombreProvincia">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="129" parent="12" name="NombreTienda">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="130" parent="12" name="DomicilioTienda">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="131" parent="12" name="CodigoPostalTienda">
+      <mandatory>1</mandatory>
+      <data-type>varchar(5)|0</data-type>
+    </column>
+    <column id="132" parent="12" name="MunicipioTienda">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="133" parent="12" name="ProvinciaTienda">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="134" parent="12" name="FechaEmision">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="135" parent="12" name="ivaFactura">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>&apos;4&apos;</default-expression>
+    </column>
+    <key id="136" parent="12" name="PRIMARY">
+      <columns>CodigoFactura</columns>
+      <primary>1</primary>
+    </key>
+    <column id="137" parent="13" name="CodigoFactura">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="138" parent="13" name="LineaFacturaDetalle">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="139" parent="13" name="nombreFrutaFactura">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="140" parent="13" name="NombreVariedad">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="141" parent="13" name="NombreMedida">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="142" parent="13" name="Precio">
+      <mandatory>1</mandatory>
+      <data-type>float|0</data-type>
+    </column>
+    <column id="143" parent="13" name="Cantidad">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="144" parent="13" name="PRIMARY">
+      <columns>CodigoFactura
+LineaFacturaDetalle</columns>
+      <primary>1</primary>
+    </key>
+    <column id="145" parent="14" name="codigoAlmacen">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="146" parent="14" name="codigoTienda">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <index id="147" parent="14" name="codigoTienda">
+      <columns>codigoTienda</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="148" parent="14" name="PRIMARY">
+      <columns>codigoAlmacen
+codigoTienda</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="149" parent="14" name="area_distribucion_ibfk_1">
+      <columns>codigoAlmacen</columns>
+      <ref-key>~.almacen.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="150" parent="14" name="area_distribucion_ibfk_2">
+      <columns>codigoTienda</columns>
+      <ref-key>~.tienda.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="151" parent="15" name="CodigoPostal">
+      <mandatory>1</mandatory>
+      <data-type>varchar(5)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="152" parent="15" name="IdMunicipio">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <index id="153" parent="15" name="IdMunicipio">
+      <columns>IdMunicipio</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="154" parent="15" name="PRIMARY">
+      <columns>CodigoPostal
+IdMunicipio</columns>
+      <primary>1</primary>
+    </key>
+    <trigger id="155" parent="15" name="codigopostal_BI_trigger">
+      <trig-events>I</trig-events>
+      <trig-turn>BEFORE_ROW</trig-turn>
+    </trigger>
+    <column id="156" parent="16" name="IdComunidadAutonoma">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="157" parent="16" name="NombreComunidadAutonoma">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <key id="158" parent="16" name="PRIMARY">
+      <columns>IdComunidadAutonoma</columns>
+      <primary>1</primary>
+    </key>
+    <column id="159" parent="17" name="CodigoAlmacen">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="160" parent="17" name="idVariedad">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="161" parent="17" name="IdMedida">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="162" parent="17" name="stock">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="163" parent="17" name="precio">
+      <mandatory>1</mandatory>
+      <data-type>float|0</data-type>
+    </column>
+    <column id="164" parent="17" name="stockMinimo">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>&apos;10&apos;</default-expression>
+    </column>
+    <column id="165" parent="17" name="stockMaximo">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>&apos;100&apos;</default-expression>
+    </column>
+    <column id="166" parent="17" name="pedidoDistribucion">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <index id="167" parent="17" name="IdMedida">
+      <columns>IdMedida</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="168" parent="17" name="idVariedad">
+      <columns>idVariedad</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="169" parent="17" name="PRIMARY">
+      <columns>CodigoAlmacen
+idVariedad
+IdMedida</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="170" parent="17" name="distribucion_ibfk_1">
+      <columns>CodigoAlmacen</columns>
+      <ref-key>~.almacen.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="171" parent="17" name="distribucion_ibfk_2">
+      <columns>idVariedad</columns>
+      <ref-key>~.variedad.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="172" parent="17" name="distribucion_ibfk_3">
+      <columns>IdMedida</columns>
+      <ref-key>~.medida.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="173" parent="18" name="codigoEmail">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="174" parent="18" name="email">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="175" parent="18" name="codigoAlmacen">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <index id="176" parent="18" name="codigoAlmacen">
+      <columns>codigoAlmacen</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="177" parent="18" name="email">
+      <columns>email</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="178" parent="18" name="PRIMARY">
+      <columns>codigoEmail</columns>
+      <primary>1</primary>
+    </key>
+    <key id="179" parent="18" name="email">
+      <columns>email</columns>
+      <underlying-index>email</underlying-index>
+    </key>
+    <foreign-key id="180" parent="18" name="email_ibfk_1">
+      <columns>codigoAlmacen</columns>
+      <ref-key>~.almacen.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="181" parent="19" name="CodigoEmpresa">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="182" parent="19" name="CIFEmpresa">
+      <mandatory>1</mandatory>
+      <data-type>varchar(9)|0</data-type>
+    </column>
+    <column id="183" parent="19" name="Nombre">
+      <mandatory>1</mandatory>
+      <data-type>varchar(25)|0</data-type>
+    </column>
+    <column id="184" parent="19" name="Direccion">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="185" parent="19" name="MovilEmpresa">
+      <data-type>varchar(12)|0</data-type>
+    </column>
+    <column id="186" parent="19" name="FijoEmpresa">
+      <data-type>varchar(12)|0</data-type>
+    </column>
+    <column id="187" parent="19" name="Email">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="188" parent="19" name="CodigoPostal">
+      <mandatory>1</mandatory>
+      <data-type>varchar(5)|0</data-type>
+    </column>
+    <index id="189" parent="19" name="CIFEmpresa">
+      <columns>CIFEmpresa</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="190" parent="19" name="CodigoPostal">
+      <columns>CodigoPostal</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="191" parent="19" name="PRIMARY">
+      <columns>CodigoEmpresa</columns>
+      <primary>1</primary>
+    </key>
+    <key id="192" parent="19" name="CIFEmpresa">
+      <columns>CIFEmpresa</columns>
+      <underlying-index>CIFEmpresa</underlying-index>
+    </key>
+    <foreign-key id="193" parent="19" name="empresa_ibfk_1">
+      <columns>CodigoPostal</columns>
+      <ref-key>frutas2016.codigopostal(CodigoPostal)</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="194" parent="20" name="idFruta">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="195" parent="20" name="nombreFruta">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <index id="196" parent="20" name="nombreFruta">
+      <columns>nombreFruta</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="197" parent="20" name="PRIMARY">
+      <columns>idFruta</columns>
+      <primary>1</primary>
+    </key>
+    <key id="198" parent="20" name="nombreFruta">
+      <columns>nombreFruta</columns>
+      <underlying-index>nombreFruta</underlying-index>
+    </key>
+    <trigger id="199" parent="20" name="fruta_BI_trigger">
+      <trig-events>I</trig-events>
+      <trig-turn>BEFORE_ROW</trig-turn>
+    </trigger>
+    <trigger id="200" parent="20" name="fruta_BU_trigger">
+      <trig-events>U</trig-events>
+      <trig-turn>BEFORE_ROW</trig-turn>
+    </trigger>
+    <column id="201" parent="21" name="IdMedida">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="202" parent="21" name="NombreMedida">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="203" parent="21" name="ValorMedida">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <index id="204" parent="21" name="NombreMedida">
+      <columns>NombreMedida</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="205" parent="21" name="PRIMARY">
+      <columns>IdMedida</columns>
+      <primary>1</primary>
+    </key>
+    <key id="206" parent="21" name="NombreMedida">
+      <columns>NombreMedida</columns>
+      <underlying-index>NombreMedida</underlying-index>
+    </key>
+    <trigger id="207" parent="21" name="medida_BI_trigger">
+      <trig-events>I</trig-events>
+      <trig-turn>BEFORE_ROW</trig-turn>
+    </trigger>
+    <trigger id="208" parent="21" name="medida_BU_trigger">
+      <trig-events>U</trig-events>
+      <trig-turn>BEFORE_ROW</trig-turn>
+    </trigger>
+    <column id="209" parent="22" name="IdMunicipio">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="210" parent="22" name="NombreMunicipio">
+      <mandatory>1</mandatory>
+      <data-type>varchar(150)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="211" parent="22" name="CodigoProvincia">
+      <mandatory>1</mandatory>
+      <data-type>char(2)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <index id="212" parent="22" name="CodigoProvincia">
+      <columns>CodigoProvincia</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="213" parent="22" name="CodigoProvincia_2">
+      <columns>CodigoProvincia</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="214" parent="22" name="CodigoProvincia_3">
+      <columns>CodigoProvincia</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="215" parent="22" name="CodProv">
+      <columns>CodigoProvincia</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="216" parent="22" name="PRIMARY">
+      <columns>IdMunicipio</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="217" parent="22" name="municipio_ibfk_2">
+      <columns>IdMunicipio</columns>
+      <ref-key>frutas2016.codigopostal(IdMunicipio)</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="218" parent="22" name="municipio_ibfk_3">
+      <columns>CodigoProvincia</columns>
+      <ref-key>~.provincia.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="219" parent="23" name="palabra">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <key id="220" parent="23" name="PRIMARY">
+      <columns>palabra</columns>
+      <primary>1</primary>
+    </key>
+    <column id="221" parent="24" name="CodigoProvincia">
+      <mandatory>1</mandatory>
+      <data-type>char(2)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="222" parent="24" name="NombreProvincia">
+      <data-type>varchar(150)|0</data-type>
+    </column>
+    <column id="223" parent="24" name="IdComunidadAutonoma">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(4)|0</data-type>
+    </column>
+    <index id="224" parent="24" name="IdComunidadAutonoma">
+      <columns>IdComunidadAutonoma</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="225" parent="24" name="PRIMARY">
+      <columns>CodigoProvincia</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="226" parent="24" name="provincia_ibfk_1">
+      <columns>IdComunidadAutonoma</columns>
+      <ref-key>~.comunidadautonoma.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="227" parent="25" name="CodigoTienda">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="228" parent="25" name="NombreTienda">
+      <mandatory>1</mandatory>
+      <data-type>varchar(25)|0</data-type>
+    </column>
+    <column id="229" parent="25" name="Direccion">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="230" parent="25" name="MovilTienda">
+      <data-type>varchar(12)|0</data-type>
+    </column>
+    <column id="231" parent="25" name="TelefonoTienda">
+      <data-type>varchar(12)|0</data-type>
+    </column>
+    <column id="232" parent="25" name="EmailTienda">
+      <data-type>varchar(25)|0</data-type>
+    </column>
+    <column id="233" parent="25" name="CodigoPostal">
+      <mandatory>1</mandatory>
+      <data-type>varchar(5)|0</data-type>
+    </column>
+    <column id="234" parent="25" name="CodigoEmpresa">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <index id="235" parent="25" name="CodigoEmpresa">
+      <columns>CodigoEmpresa</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="236" parent="25" name="CodigoPostal">
+      <columns>CodigoPostal</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="237" parent="25" name="PRIMARY">
+      <columns>CodigoTienda</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="238" parent="25" name="tienda_ibfk_2">
+      <columns>CodigoPostal</columns>
+      <ref-key>frutas2016.codigopostal(CodigoPostal)</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="239" parent="25" name="tienda_ibfk_1">
+      <columns>CodigoEmpresa</columns>
+      <ref-key>~.empresa.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="240" parent="26" name="CodigoPedido">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="241" parent="26" name="CodigoTiendaPedido">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="242" parent="26" name="CodigoAlmacen">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="243" parent="26" name="FechaPedido">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="244" parent="26" name="AlbaranGenerado">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <index id="245" parent="26" name="FK_tienda_pedido_cabezera_almacen">
+      <columns>CodigoAlmacen</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="246" parent="26" name="FK_tienda_pedido_cabezera_tienda">
+      <columns>CodigoTiendaPedido</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="247" parent="26" name="PRIMARY">
+      <columns>CodigoPedido</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="248" parent="26" name="FK_tienda_pedido_cabezera_tienda">
+      <columns>CodigoTiendaPedido</columns>
+      <ref-key>~.tienda.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="249" parent="26" name="FK_tienda_pedido_cabezera_almacen">
+      <columns>CodigoAlmacen</columns>
+      <ref-key>~.almacen.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="250" parent="27" name="CodigoPedido">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="251" parent="27" name="CodigoVariedad">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="252" parent="27" name="CodigoMedida">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="253" parent="27" name="CantidadPedida">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <index id="254" parent="27" name="CodigoMedida">
+      <columns>CodigoMedida</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="255" parent="27" name="FK_tienda_pedido_detalle_variedad">
+      <columns>CodigoVariedad</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="256" parent="27" name="PRIMARY">
+      <columns>CodigoPedido
+CodigoVariedad
+CodigoMedida</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="257" parent="27" name="FK_tienda_pedido_detalle_tienda_pedido_cabezera">
+      <columns>CodigoPedido</columns>
+      <ref-key>~.tienda_pedido_cabezera.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="258" parent="27" name="FK_tienda_pedido_detalle_variedad">
+      <columns>CodigoVariedad</columns>
+      <ref-key>~.variedad.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="259" parent="27" name="tienda_pedido_detalle_ibfk_1">
+      <columns>CodigoMedida</columns>
+      <ref-key>frutas2016.distribucion(IdMedida)</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="260" parent="28" name="idVariedad">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="261" parent="28" name="nombreVariedad">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="262" parent="28" name="idFruta">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <index id="263" parent="28" name="idFruta">
+      <columns>idFruta</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="264" parent="28" name="nombreVariedad">
+      <columns>nombreVariedad</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="265" parent="28" name="PRIMARY">
+      <columns>idVariedad</columns>
+      <primary>1</primary>
+    </key>
+    <key id="266" parent="28" name="nombreVariedad">
+      <columns>nombreVariedad</columns>
+      <underlying-index>nombreVariedad</underlying-index>
+    </key>
+    <foreign-key id="267" parent="28" name="variedad_ibfk_1">
+      <columns>idFruta</columns>
+      <ref-key>~.fruta.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <trigger id="268" parent="28" name="variedad_BI_trigger">
+      <trig-events>I</trig-events>
+      <trig-turn>BEFORE_ROW</trig-turn>
+    </trigger>
+    <trigger id="269" parent="28" name="variedad_BU_trigger">
+      <trig-events>U</trig-events>
+      <trig-turn>BEFORE_ROW</trig-turn>
+    </trigger>
+    <column id="270" parent="29" name="CodigoTienda">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+    </column>
+    <column id="271" parent="29" name="CodigoVariedad">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="272" parent="29" name="CodigoMedida">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="273" parent="29" name="stockTienda">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="274" parent="29" name="precioVenta">
+      <mandatory>1</mandatory>
+      <data-type>float|0</data-type>
+    </column>
+    <column id="275" parent="29" name="stockMinimo">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+      <default-expression>&apos;5&apos;</default-expression>
+    </column>
+    <column id="276" parent="29" name="stockMaximo">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+      <default-expression>&apos;20&apos;</default-expression>
+    </column>
+    <column id="277" parent="29" name="pedidoVenta">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <index id="278" parent="29" name="FK_venta_medida">
+      <columns>CodigoMedida</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="279" parent="29" name="FK_venta_variedad">
+      <columns>CodigoVariedad</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="280" parent="29" name="PRIMARY">
+      <columns>CodigoTienda
+CodigoVariedad
+CodigoMedida</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="281" parent="29" name="FK_venta_tienda">
+      <columns>CodigoTienda</columns>
+      <ref-key>~.tienda.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="282" parent="29" name="FK_venta_variedad">
+      <columns>CodigoVariedad</columns>
+      <ref-key>~.variedad.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="283" parent="29" name="FK_venta_medida">
+      <columns>CodigoMedida</columns>
+      <ref-key>~.medida.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <argument id="284" parent="30" name="curso">
+      <direction>IN</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="285" parent="30" name="actilla">
+      <direction>IN</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="286" parent="31" name="fruta">
+      <direction>IN</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="287" parent="31" name="mensaje">
+      <direction>OUT</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="288" parent="32">
+      <direction>RETURN</direction>
+      <data-type>int(10)|0</data-type>
+    </argument>
+    <argument id="289" parent="32" name="frase">
+      <direction>IN</direction>
+      <data-type>varchar(150)|0</data-type>
+    </argument>
+    <argument id="290" parent="32" name="palabraClave">
+      <direction>IN</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="291" parent="33">
+      <direction>RETURN</direction>
+      <data-type>varchar(100)|0</data-type>
+    </argument>
+    <argument id="292" parent="33" name="cadena">
+      <direction>IN</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="293" parent="34" name="fruta">
+      <direction>IN</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="294" parent="35" name="fruta">
+      <direction>IN</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="295" parent="35" name="mensaje">
+      <direction>OUT</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="296" parent="36" name="colorIB">
+      <direction>IN</direction>
+      <data-type>varchar(200)|0</data-type>
+    </argument>
+    <argument id="297" parent="36" name="accion">
+      <direction>IN</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="298" parent="36" name="valor">
+      <direction>OUT</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="299" parent="37" name="salida">
+      <direction>OUT</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="300" parent="37" name="colorInt">
+      <direction>IN</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="301" parent="38" name="colorInt">
+      <direction>IN</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="302" parent="38" name="salida">
+      <direction>OUT</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="303" parent="38" name="accion">
+      <direction>IN</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="304" parent="39" name="colorIn">
+      <direction>IN</direction>
+      <data-type>varchar(200)|0</data-type>
+    </argument>
+    <argument id="305" parent="39" name="operacion">
+      <direction>IN</direction>
+      <data-type>varchar(1)|0</data-type>
+    </argument>
+    <argument id="306" parent="39" name="colorNuevoIn">
+      <direction>IN</direction>
+      <data-type>varchar(200)|0</data-type>
+    </argument>
+    <argument id="307" parent="39" name="estado">
+      <direction>OUT</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="308" parent="40">
+      <direction>RETURN</direction>
+      <data-type>varchar(20)|0</data-type>
+    </argument>
+    <argument id="309" parent="40" name="nombreU">
+      <direction>IN</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="310" parent="41">
+      <direction>RETURN</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="311" parent="41" name="nombre">
+      <direction>IN</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="312" parent="42">
+      <direction>RETURN</direction>
+      <data-type>varchar(15)|0</data-type>
+    </argument>
+    <argument id="313" parent="42" name="condicion">
+      <direction>IN</direction>
+      <data-type>varchar(100)|0</data-type>
+    </argument>
+    <argument id="314" parent="43">
+      <direction>RETURN</direction>
+      <data-type>int(10)|0</data-type>
+    </argument>
+    <argument id="315" parent="43" name="frase">
+      <direction>IN</direction>
+      <data-type>varchar(100)|0</data-type>
+    </argument>
+    <argument id="316" parent="44">
+      <direction>RETURN</direction>
+      <data-type>int(10)|0</data-type>
+    </argument>
+    <argument id="317" parent="44" name="frase">
+      <direction>IN</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="318" parent="45">
+      <direction>RETURN</direction>
+      <data-type>varchar(100)|0</data-type>
+    </argument>
+    <argument id="319" parent="45" name="palabra">
+      <direction>IN</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="320" parent="46" name="tabla">
+      <direction>IN</direction>
+      <data-type>varchar(30)|0</data-type>
+    </argument>
+    <argument id="321" parent="47">
+      <direction>RETURN</direction>
+      <data-type>int(10)|0</data-type>
+    </argument>
+    <argument id="322" parent="47" name="cadena">
+      <direction>IN</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="323" parent="47" name="caracter">
+      <direction>IN</direction>
+      <data-type>varchar(1)|0</data-type>
+    </argument>
+    <argument id="324" parent="48">
+      <direction>RETURN</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="325" parent="48" name="palabra">
+      <direction>IN</direction>
+      <data-type>varchar(100)|0</data-type>
+    </argument>
+    <argument id="326" parent="49">
+      <direction>RETURN</direction>
+      <data-type>varchar(25)|0</data-type>
+    </argument>
+    <argument id="327" parent="49" name="dia">
+      <direction>IN</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="328" parent="50">
+      <direction>RETURN</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="329" parent="50" name="mes">
+      <direction>IN</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="330" parent="50" name="dia">
+      <direction>IN</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="331" parent="51">
+      <direction>RETURN</direction>
+      <data-type>varchar(100)|0</data-type>
+    </argument>
+    <argument id="332" parent="51" name="numeroA">
+      <direction>IN</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="333" parent="51" name="numeroB">
+      <direction>IN</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="334" parent="52">
+      <direction>RETURN</direction>
+      <data-type>varchar(20)|0</data-type>
+    </argument>
+    <argument id="335" parent="52" name="p1">
+      <direction>IN</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="336" parent="53" name="curso">
+      <direction>IN</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="337" parent="53" name="actilla">
+      <direction>IN</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="338" parent="54" name="fruta">
+      <direction>IN</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="339" parent="55" name="actilla">
+      <direction>IN</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="340" parent="55" name="curso">
+      <direction>IN</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="341" parent="55" name="mensaje">
+      <direction>OUT</direction>
+      <data-type>varchar(100)|0</data-type>
+    </argument>
+    <argument id="342" parent="56" name="tabla">
+      <direction>IN</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="343" parent="56" name="ncurso">
+      <direction>IN</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="344" parent="56" name="actilla">
+      <direction>IN</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="345" parent="57">
+      <direction>RETURN</direction>
+      <data-type>varchar(100)|0</data-type>
+    </argument>
+    <argument id="346" parent="57" name="palabra">
+      <direction>IN</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="347" parent="58" name="mensaje">
+      <direction>OUT</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="348" parent="59" name="mensaje">
+      <direction>OUT</direction>
+      <data-type>varchar(100)|0</data-type>
+    </argument>
+    <argument id="349" parent="60" name="mensaje">
+      <direction>OUT</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="350" parent="61">
+      <direction>RETURN</direction>
+      <data-type>varchar(100)|0</data-type>
+    </argument>
+    <argument id="351" parent="61" name="numeroA">
+      <direction>IN</direction>
+      <data-type>int(10)|0</data-type>
+    </argument>
+    <argument id="352" parent="61" name="numeroB">
+      <direction>IN</direction>
+      <data-type>int(10)|0</data-type>
+    </argument>
+    <argument id="353" parent="62" name="ialumno">
+      <direction>IN</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="354" parent="62" name="actilla">
+      <direction>IN</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="355" parent="62" name="tabla">
+      <direction>IN</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="356" parent="63">
+      <direction>RETURN</direction>
+      <data-type>varchar(100)|0</data-type>
+    </argument>
+    <argument id="357" parent="63" name="palabra">
+      <direction>IN</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="358" parent="64">
+      <direction>RETURN</direction>
+      <data-type>varchar(100)|0</data-type>
+    </argument>
+    <argument id="359" parent="64" name="palabra">
+      <direction>IN</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="360" parent="65">
+      <direction>RETURN</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="361" parent="65" name="frase">
+      <direction>IN</direction>
+      <data-type>varchar(200)|0</data-type>
+    </argument>
+    <argument id="362" parent="66">
+      <direction>RETURN</direction>
+      <data-type>varchar(200)|0</data-type>
+    </argument>
+    <argument id="363" parent="66" name="frase">
+      <direction>IN</direction>
+      <data-type>varchar(200)|0</data-type>
+    </argument>
+    <argument id="364" parent="67">
+      <direction>RETURN</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="365" parent="67" name="numero">
+      <direction>IN</direction>
+      <data-type>int(10) unsigned|0</data-type>
+    </argument>
+    <argument id="366" parent="68" name="codigoAlmacenIN">
+      <direction>IN</direction>
+      <data-type>int(5)|0</data-type>
+    </argument>
+    <argument id="367" parent="68" name="codigoTiendaIN">
+      <direction>IN</direction>
+      <data-type>int(5)|0</data-type>
+    </argument>
+    <argument id="368" parent="68" name="mesIN">
+      <direction>IN</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="369" parent="69" name="mensaje">
+      <direction>OUT</direction>
+      <data-type>varchar(100)|0</data-type>
+    </argument>
+    <argument id="370" parent="70" name="fruta">
+      <direction>IN</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="371" parent="70" name="mensaje">
+      <direction>OUT</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="372" parent="71" name="fruta">
+      <direction>IN</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="373" parent="71" name="mensaje">
+      <direction>OUT</direction>
+      <data-type>varchar(100)|0</data-type>
+    </argument>
+    <argument id="374" parent="72" name="fruta">
+      <direction>IN</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="375" parent="72" name="mensaje">
+      <direction>OUT</direction>
+      <data-type>varchar(500)|0</data-type>
+    </argument>
+    <argument id="376" parent="73">
+      <direction>RETURN</direction>
+      <data-type>varchar(200)|0</data-type>
+    </argument>
+    <argument id="377" parent="73" name="frase">
+      <direction>IN</direction>
+      <data-type>varchar(200)|0</data-type>
+    </argument>
+    <argument id="378" parent="74">
+      <direction>RETURN</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="379" parent="74" name="fruta">
+      <direction>IN</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="380" parent="75" name="tienda">
+      <direction>IN</direction>
+      <data-type>int(2)|0</data-type>
+    </argument>
+    <argument id="381" parent="75" name="mes">
+      <direction>IN</direction>
+      <data-type>int(2)|0</data-type>
+    </argument>
+    <argument id="382" parent="75" name="almacen">
+      <direction>IN</direction>
+      <data-type>int(2)|0</data-type>
+    </argument>
+    <argument id="383" parent="75" name="mensaje">
+      <direction>OUT</direction>
+      <data-type>varchar(100)|0</data-type>
+    </argument>
+    <argument id="384" parent="76" name="edad">
+      <direction>IN</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="385" parent="76" name="mensaje">
+      <direction>OUT</direction>
+      <data-type>varchar(100)|0</data-type>
+    </argument>
+    <argument id="386" parent="77" name="albaran">
+      <direction>IN</direction>
+      <data-type>int(5)|0</data-type>
+    </argument>
+    <argument id="387" parent="77" name="MENSAJE">
+      <direction>OUT</direction>
+      <data-type>varchar(100)|0</data-type>
+    </argument>
+    <argument id="388" parent="78">
+      <direction>RETURN</direction>
+      <data-type>varchar(200)|0</data-type>
+    </argument>
+    <argument id="389" parent="78" name="frase">
+      <direction>IN</direction>
+      <data-type>varchar(200)|0</data-type>
+    </argument>
+    <argument id="390" parent="79">
+      <direction>RETURN</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="391" parent="80">
+      <direction>RETURN</direction>
+      <data-type>varchar(100)|0</data-type>
+    </argument>
+    <argument id="392" parent="80" name="cadena">
+      <direction>IN</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="393" parent="81">
+      <direction>RETURN</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="394" parent="81" name="cadena">
+      <direction>IN</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="395" parent="82">
+      <direction>RETURN</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="396" parent="82" name="nombre">
+      <direction>IN</direction>
+      <data-type>varchar(50)|0</data-type>
+    </argument>
+    <argument id="397" parent="83">
+      <direction>RETURN</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="398" parent="83" name="cadena">
+      <direction>IN</direction>
+      <data-type>varchar(100)|0</data-type>
+    </argument>
+    <argument id="399" parent="84" name="x">
+      <direction>IN</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="400" parent="85" name="provincia">
+      <direction>IN</direction>
+      <data-type>varchar(100)|0</data-type>
+    </argument>
+    <argument id="401" parent="85" name="codigo">
+      <direction>OUT</direction>
+      <data-type>varchar(2)|0</data-type>
+    </argument>
+  </database-model>
+</dataSource>
