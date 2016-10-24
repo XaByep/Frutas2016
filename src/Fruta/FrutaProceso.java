@@ -21,7 +21,7 @@ public class FrutaProceso {
     public void conectar() {
         db = AccesoBD.getMiConexion();
         try {
-            db.conectar("com.mysql.jdbc.Driver", "jdbc:mysql://localhost/frutas_2016", "root", "");
+            db.conectar("com.mysql.jdbc.Driver", "jdbc:mysql://localhost/frutas2016", "root", "");
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
