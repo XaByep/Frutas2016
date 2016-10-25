@@ -43,7 +43,7 @@
                     </p>
 
                     <p class="telefono">
-                        <input name="telefono" type="number" maxlength="12" class="validate[required,custom[telefono],length[0,12]] feedback-input" id="telefono" placeholder="Teléfono" />
+                        <input name="telefono" type="text" maxlength="12" class="validate[required,custom[telefono],length[0,12]] feedback-input" id="telefono" placeholder="Teléfono" />
                     </p>
 
                     <p class="cp">
