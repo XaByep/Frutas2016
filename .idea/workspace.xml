@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="2a03c9ce-8dfd-4918-9e2f-d2b393f1766c" name="Default" comment="Update">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Almacen/Almacen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Almacen/ControlAlmacen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Almacen/IControlAlmacen.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/2000ec8d-b864-49d5-9721-8eeb4be44131.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/4e212f3f-b0bc-441e-9f0f-13535d75acf2.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/almacen/RegistrarAlma.jsp" afterPath="$PROJECT_DIR$/web/almacen/registrarAlma.jsp" />
+    <list default="true" readonly="true" id="2a03c9ce-8dfd-4918-9e2f-d2b393f1766c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Fruta2016_war_exploded/almacen/RegistrarAlma.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Fruta2016_war_exploded/almacen/RegistrarAlma.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Fruta2016_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Fruta2016_war_exploded/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/almacen/registrarChequear.jsp" afterPath="$PROJECT_DIR$/web/almacen/registrarChequear.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
     </list>
     <ignored path="Fruta2016.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1126,7 +1116,7 @@
       <workItem from="1477292210653" duration="2899000" />
       <workItem from="1477295934533" duration="7996000" />
       <workItem from="1477322492732" duration="5989000" />
-      <workItem from="1477379702754" duration="1328000" />
+      <workItem from="1477379702754" duration="1396000" />
     </task>
     <task id="LOCAL-00001" summary="Prueba">
       <created>1477087178034</created>
@@ -1149,11 +1139,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477308385246</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Almacen">
+      <created>1477381067183</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1477381067183</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67874000" />
+    <option name="totallyTimeSpent" value="67942000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1225,7 +1222,8 @@
     <MESSAGE value="Prueba" />
     <MESSAGE value="Update" />
     <MESSAGE value="registrarChequear" />
-    <option name="LAST_COMMIT_MESSAGE" value="registrarChequear" />
+    <MESSAGE value="Almacen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Almacen" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
