@@ -35,7 +35,7 @@
           </div>
           <div>
             <input type="submit" value="Iniciar Sesión" />
-            <a href="almacen/RegistrarAlma.jsp">Registrar</a>
+            <a href="almacen/registrarAlma.jsp">Registrar</a>
           </div>
         </form><!-- form -->
       </section><!-- content -->

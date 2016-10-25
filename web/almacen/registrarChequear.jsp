@@ -1,4 +1,4 @@
-<%--
+<%@ page import="Almacen.ControlAlmacen" %><%--
   Created by IntelliJ IDEA.
   User: JAVI
   Date: 24/10/2016
@@ -11,7 +11,26 @@
     <title>Chequear datos almacén</title>
 </head>
 <body>
+<%
+    ControlAlmacen controlAlmacen=new ControlAlmacen();
+    String cif=request.getParameter("cif");
+    String nombreAl =request.getParameter("nombre");
+    String psw=request.getParameter("paswd");
+    String nombreUsu=request.getParameter("usuario");
+    String direccion=request.getParameter("direccion");
+    String cp=request.getParameter("cp").substring(0,5);
+    String telefono=request.getParameter("telefono");
+    String[] elementos={cif, nombreAl,direccion,telefono,cp,nombreUsu,psw};
+    if(!controlAlmacen.verificar(nombreUsu,cif)){
+        System.out.println(controlAlmacen.insertar(elementos));
 
+    }else{
+
+    }
+
+
+
+%>
 
 
 </body>
